@@ -1,1 +1,49 @@
-<h1>My static webstie</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K.H DevOps portfolio page</title>
+
+  <!-- Favicon (ikona zakładki) -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Wstępne ustawienie trybu, aby uniknąć migotania -->
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem("theme") || "dark";
+        document.documentElement.classList.add(theme);
+      } catch(e) {
+        console.error(e);
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <main>
+    <h1 id="title">Welcome to my page!</h1>
+    <br>
+    <p id="description">Here you will find information about me, my experience, and skills.</p>
+    <br>
+    <p id="aboutText">
+      Experienced DevOps Engineer with 9+ years in IT, including ~4 years in DevOps and Site Reliability roles. 
+      Hands-on in building and maintaining cloud-native environments (Azure, GCP, Kubernetes, OpenShift) with a strong focus on automation (Terraform, Helm, GitOps with ArgoCD) and CI/CD pipelines (GitHub Actions, Azure DevOps, Jenkins). 
+      Proven track record in deploying and operating containerized applications, optimizing reliability, and improving delivery speed. Skilled in monitoring and observability (Grafana, ELK) and troubleshooting complex distributed systems. 
+      Strong problem-solving mindset, combining platform engineering practices with application-level expertise.
+    </p>
+
+    <!-- DevOps Logo -->
+    <div class="devops-logo">
+      <img src="images/devops.png" alt="DevOps Logo">
+    </div>
+    
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
