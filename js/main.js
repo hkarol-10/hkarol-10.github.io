@@ -60,6 +60,28 @@ function loadHeaderFooter() {
         handleLanguageSwitch();
         langSwitch.addEventListener("change", handleLanguageSwitch);
       }
+
+      // Mobile nav toggle
+      const menuBtn = headerContainer.querySelector('.menu-toggle');
+      const nav = headerContainer.querySelector('#primary-navigation');
+      if (menuBtn && nav) {
+        menuBtn.addEventListener('click', () => {
+          const opened = nav.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', String(opened));
+          menuBtn.setAttribute('aria-label', opened ? 'Close menu' : 'Open menu');
+        });
+
+        // Close nav when a link is clicked (mobile)
+        nav.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            if (nav.classList.contains('open')) {
+              nav.classList.remove('open');
+              menuBtn.setAttribute('aria-expanded', 'false');
+              menuBtn.setAttribute('aria-label', 'Open menu');
+            }
+          });
+        });
+      }
     }
   }).catch(err => console.error("Header load error:", err));
 
