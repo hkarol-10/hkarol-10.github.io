@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">HashiCorp Certified: Terraform Associate 004</title>
+  <desc id="desc">Terraform Certified Associate badge</desc>
+  <rect width="700" height="700" fill="#000"/>
+  <path d="M92 42h496c24 0 44 20 44 44v106H48V86c0-24 20-44 44-44z" fill="#9141c1"/>
+  <path d="M151 94l21 12v38l-21-12zm0 52l21 12v38l-21-12zm27-36l21 12v38l-21-12zm27 16l21-12v38l-21 12zm-27 16l21 12v38l-21-12z" fill="#fff"/>
+  <text x="234" y="145" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Terraform</text>
+  <text x="150" y="270" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="40">CERTIFIED</text>
+  <text x="150" y="320" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="43">ASSOCIATE</text>
+  <text x="150" y="369" fill="#9141c1" font-family="Arial,Helvetica,sans-serif" font-size="28">HCTA0-</text>
+  <text x="274" y="369" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="28">004</text>
+  <path d="M524 239l5 14 15 1-12 9 4 15-12-8-13 8 5-15-12-9 15-1z" fill="#fff"/>
+  <g fill="#fff" transform="translate(350 540)"><path d="M0-33l18 10v21L0 8-18-2v-21z"/><path d="M-24-47l18 10v21l-18-10zm48 0L6-37v21l18-10z"/><path d="M-24 5l18 10v21l-18-10zm48 0L6 15v21l18-10z"/><path d="M-6-26l12-7v42L-6 16z"/></g>
+</svg>
